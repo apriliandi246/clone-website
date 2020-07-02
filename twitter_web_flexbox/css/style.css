@@ -1,0 +1,245 @@
+body {
+  color: whitesmoke;
+  background-color: rgb(21, 32, 43);
+  font-family: "Balsamiq Sans", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* MENU */
+
+.menus .logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin-bottom: 40px;
+  background-size: cover;
+  background-position: -24px 2px;
+  background-image: url(../img/image.png);
+}
+
+.menus ul li {
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.menus ul li a {
+  font-size: 25px;
+  color: whitesmoke;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+.menus ul li a:hover {
+  border-radius: 5px;
+  color: lightskyblue;
+  background-color: rgb(25, 39, 52);
+  transition: 0.1s;
+}
+
+.menus button {
+  width: 180px;
+  padding: 10px;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 6px;
+  font-weight: bold;
+  color: whitesmoke;
+  border-radius: 20px;
+  border: 2px solid blueviolet;
+  background-color: blueviolet;
+  transition: 0.2s;
+}
+
+.menus button:hover {
+  color: lightskyblue;
+  border: 2px solid #38444d;
+  background-color: rgb(25, 39, 52);
+}
+
+/* CONTENT */
+.content {
+  width: 600px;
+  margin-right: 85px;
+  margin-left: 85px;
+  box-sizing: border-box;
+  border: 1px solid #38444d;
+}
+
+.content .head {
+  padding: 10px;
+}
+
+.content .head h1 {
+  font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.content .head span {
+  color: blue;
+  font-size: 28px;
+}
+
+.content .head h1 span {
+  font-weight: bold;
+  margin-right: 13px;
+}
+
+.content .head p {
+  margin-left: 39px;
+  margin-bottom: 7px;
+}
+
+.content .banner {
+  position: relative;
+}
+
+.content .banner .hero {
+  height: 200px;
+  background-size: cover;
+  border-top: 1px solid #38444d;
+  background-position: 4.5px -2px;
+  background-image: url(../img/hero.jpeg);
+}
+
+.content .profile-picture {
+  top: 120px;
+  left: 15px;
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  border-radius: 100%;
+  background-size: cover;
+  border: 1px solid seagreen;
+  background-position: -37px 2px;
+  background-image: url(../img/image.png);
+}
+
+.content button {
+  width: 140px;
+  float: right;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 18px;
+  font-weight: bold;
+  margin-right: 14px;
+  color: whitesmoke;
+  border-radius: 50px;
+  border: 2px solid blueviolet;
+  background-color: rgb(21, 32, 43);
+  transition: 0.2s;
+}
+
+.content button:hover {
+  color: lightskyblue;
+  border: 2px solid #38444d;
+  background-color: rgb(25, 39, 52);
+}
+
+.content .detail {
+  padding: 15px;
+  margin-top: 60px;
+}
+
+.content .detail h1 {
+  font-size: 35px;
+}
+
+.content .detail p {
+  margin-top: 13px;
+}
+
+.content .detail span {
+  margin-right: 10px;
+}
+
+.content .detail .username {
+  color: rgb(136, 153, 166);
+}
+
+.content .detail .detail-1 {
+  color: rgb(136, 153, 166);
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 316px;
+  box-sizing: border-box;
+}
+
+.sidebar input {
+  border: none;
+  width: 290px;
+  padding: 11px;
+  outline: none;
+  font-size: 17px;
+  text-indent: 13px;
+  color: whitesmoke;
+  border-radius: 20px;
+  background-color: rgb(37, 51, 65);
+  transition: 0.1s;
+}
+
+.sidebar input:focus {
+  background-color: #38444d;
+  transition: 0.1s;
+}
+
+.sidebar .trends {
+  padding: 17px;
+  margin-top: 25px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  border: 1px solid #38444d;
+  background-color: rgb(25, 39, 52);
+}
+
+.sidebar .trends h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.sidebar .trends .topics {
+  margin-top: 18px;
+}
+
+.sidebar .trends .topics p {
+  margin-top: 10px;
+}
+
+.sidebar .trends .topics .topic {
+  margin-top: 19px;
+}
+
+.sidebar .trends .topics hr.line {
+  border: 0.2px solid #38444d;
+}
+
+.sidebar .trends .topics p.trend {
+  font-size: 20px;
+  margin-top: 11px;
+  margin-bottom: 12px;
+  color: rgb(136, 153, 166);
+}
+
+.sidebar .trends .show-more p {
+  color: blue;
+  margin-top: 23px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.sidebar .trends hr.line {
+  margin-top: 17px;
+  border: 0.2px solid #38444d;
+}
