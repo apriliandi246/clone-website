@@ -6,13 +6,23 @@ body {
 
 /* <Navbar component> */
 .navbar {
+   top: 0;
+   left: 0;
+   right: 0;
    height: 58px;
    display: flex;
+   position: fixed;
    align-items: center;
-   padding-inline: 320px;
+   justify-content: center;
    background-color: #ffffff;
-   justify-content: space-between;
    box-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__container {
+   width: 68%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
 
 .brand {
@@ -67,15 +77,45 @@ body {
    box-shadow: 1px 1px 0.5px #0000ff;
 }
 
+.toggle-menu {
+   height: 20px;
+   display: none;
+   margin-right: 20px;
+   position: relative;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.toggle-menu__trigger {
+   top: -7px;
+   opacity: 0;
+   z-index: 2;
+   left: -11px;
+   width: 42px;
+   height: 27px;
+   cursor: pointer;
+   position: absolute;
+}
+
+.toggle-menu__block {
+   width: 28px;
+   height: 3px;
+   display: block;
+   border-radius: 10px;
+   transition: all 0.3s;
+   background-color: #000000;
+}
+
 /* </Navbar component> */
 
 /* Container */
 
 .container {
-   column-gap: 29px;
    width: 68%;
    display: grid;
-   margin: 30px auto;
+   column-gap: 29px;
+   justify-content: center;
+   margin: 86px auto 30px auto;
    grid-template-columns: 240px 690px 325px;
 }
 
@@ -307,4 +347,79 @@ body {
 
 .post-topic__post span {
    font-size: 0.8rem;
+}
+
+/* media query */
+
+@media screen and (max-width: 1630px) {
+   .aside-right {
+      display: none;
+   }
+
+   .navbar__container {
+      width: 87%;
+   }
+
+   .container {
+      width: 68%;
+      grid-template-columns: 240px 690px;
+   }
+}
+
+@media screen and (max-width: 1020px) {
+   .toggle-menu {
+      display: flex;
+   }
+
+   .populer-tags {
+      display: none;
+   }
+
+   .container {
+      width: 80%;
+      grid-template-columns: 1fr;
+   }
+
+   .aside-left {
+      width: 300px;
+      top: 0;
+      left: 0;
+      position: absolute;
+      display: none;
+   }
+
+   .join {
+      border-top: none;
+      margin-bottom: 0;
+   }
+
+   .menu-tags {
+      padding: 10px;
+      margin-left: 0;
+      border-bottom: none;
+      background-color: #ffffff;
+   }
+}
+
+@media screen and (max-width: 900px) {
+   .auth a:first-child,
+   .brand__search {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .container {
+      width: 95%;
+   }
+
+   .menus {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
+
+   .menus__title {
+      margin-bottom: 20px;
+   }
 }
