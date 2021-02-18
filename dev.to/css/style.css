@@ -430,6 +430,42 @@ body {
    }
 }
 
+footer {
+   padding: 40px;
+   font-size: 0.9rem;
+   background-color: #d2d6db;
+}
+
+footer {
+   text-align: center;
+}
+
+.footer__desc p:first-child {
+   margin-bottom: 30px;
+}
+
+.footer__desc p {
+   line-height: 30px;
+}
+
+.footer__rules {
+   margin-block: 30px;
+}
+
+.footer__menus a {
+   color: #000000;
+   line-height: 30px;
+   margin-right: 20px;
+   text-decoration: none;
+}
+
+.footer__rules a {
+   color: #000000;
+   line-height: 30px;
+   margin-right: 20px;
+   text-decoration: none;
+}
+
 @media screen and (max-width: 900px) {
    .auth a:first-child,
    .brand__search {
