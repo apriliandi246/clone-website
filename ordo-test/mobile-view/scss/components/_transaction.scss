@@ -1,0 +1,173 @@
+.transaction {
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 26.2326px rgba(0, 0, 0, 0.1);
+}
+
+.transaction__head {
+  display: flex;
+  padding: 14px;
+  align-items: center;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #bbb;
+  justify-content: space-between;
+}
+
+.transaction__title {
+  color: #94afb6;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.transaction__buttons {
+  gap: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.transaction__all-btn {
+  background-color: #05a4db;
+}
+
+.transaction__filter-btn {
+  gap: 6px;
+  display: flex;
+  align-items: center;
+  background-color: #fa4a0c;
+}
+
+.btn {
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 11px;
+  padding: 7px 23px;
+  border-radius: 7px;
+}
+
+.transaction__detail {
+  padding: 0 18px 1px 18px;
+}
+
+.transaction__date {
+  color: #94afb6;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+.transaction__gross-income {
+  padding: 14px 18px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 13.1163px 52.4651px rgba(0, 0, 0, 0.08);
+}
+
+.transaction__label {
+  color: #fa4a0c;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.transaction__total-income {
+  color: #6d6d6d;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.transaction__lists {
+  margin-top: 30px;
+}
+
+.transaction__list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+.list__user {
+  display: flex;
+  align-items: center;
+}
+
+.list__user-detail {
+  margin-left: 14px;
+}
+
+.list__stuff {
+  color: #94afb6;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.list__name {
+  color: #3d6670;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.list__detail-transaction {
+  display: flex;
+  flex-direction: column;
+}
+
+.list__label-price {
+  color: #94afb6;
+  font-size: 13px;
+  font-weight: 500;
+  align-self: flex-end;
+}
+
+.list__price {
+  color: #41be06;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 377px) {
+  .transaction__date {
+    margin-left: 6px;
+  }
+
+  .transaction__gross-income {
+    padding: 12px 16px;
+  }
+
+  .transaction__label {
+    font-size: 14px;
+  }
+
+  .transaction__total-income {
+    font-size: 22px;
+    margin-top: -2px;
+  }
+
+  .transaction__detail {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+
+  .list__user-detail {
+    margin-left: 12px;
+  }
+
+  .list__stuff {
+    font-size: 12px;
+  }
+
+  .list__name {
+    margin-top: -3px;
+    font-size: 15px;
+  }
+
+  .list__label-price {
+    font-size: 12px;
+  }
+
+  .list__price {
+    font-size: 15px;
+  }
+}

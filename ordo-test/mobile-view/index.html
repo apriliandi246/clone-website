@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Mobile View</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title-app">Finansial</h1>
+
+    <!-- Balance -->
+    <div class="balance">
+      <div class="balance__data">
+        <h2 class="balance__label">total saldo</h2>
+        <h1 class="balance__total">Rp 50.000.00,00</h1>
+
+        <div class="balance__icon">
+          <svg
+            width="11"
+            height="11"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#fff"
+              d="M.21 6.508h7.648L4.345 10.02l.892.886 5.028-5.028L5.237.851l-.886.886 3.507 3.514H.209v1.257z" />
+          </svg>
+        </div>
+      </div>
+
+      <button class="balance__add-btn">Tambah</button>
+    </div>
+
+    <!-- Transaction -->
+    <div class="transaction">
+      <div class="transaction__head">
+        <h2 class="transaction__title">Transaksi</h2>
+
+        <div class="transaction__buttons">
+          <button class="transaction__all-btn btn">Semua</button>
+
+          <button class="transaction__filter-btn btn">
+            Filter
+            <svg width="10" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill="#fff"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.872 2.407a2.187 2.187 0 01-1.64 2.117v4.441H7.14v-4.44a2.187 2.187 0 112.732-2.118zm-3.279 0a1.093 1.093 0 102.186 0 1.093 1.093 0 00-2.186 0zM.581 7.872c0-1.019.697-1.874 1.64-2.117V1.314h1.093v4.44A2.187 2.187 0 11.58 7.873zm1.093 0a1.093 1.093 0 102.186 0 1.093 1.093 0 00-2.186 0z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="transaction__detail">
+        <h2 class="transaction__date">14 Juli 2021</h2>
+
+        <div class="transaction__gross-income">
+          <h1 class="transaction__label">pendapatan kotor</h1>
+          <h1 class="transaction__total-income">RP 30.000.00,00</h1>
+        </div>
+
+        <div class="transaction__lists">
+          <div class="transaction__list">
+            <div class="list__user">
+              <img width="49" height="48" src="./assets/avatar-1.png" alt="Transaction 1">
+
+              <div class="list__user-detail">
+                <span class="list__stuff">LPG 15 Kg</span>
+                <h3 class="list__name">Alexander Riuji</h3>
+              </div>
+            </div>
+
+            <div class="list__detail-transaction">
+              <span class="list__label-price">Harga</span>
+              <h3 class="list__price">Rp. 150.000</h3>
+            </div>
+          </div>
+
+          <div class="transaction__list">
+            <div class="list__user">
+              <img width="49" height="48" src="./assets/avatar-2.png" alt="Transaction 2">
+
+              <div class="list__user-detail">
+                <span class="list__stuff">LPG 15 Kg</span>
+                <h3 class="list__name">Alexander Riuji</h3>
+              </div>
+            </div>
+
+            <div class="list__detail-transaction">
+              <span class="list__label-price">Harga</span>
+              <h3 class="list__price">Rp. 150.000</h3>
+            </div>
+          </div>
+
+          <div class="transaction__list">
+            <div class="list__user">
+              <img width="49" height="48" src="./assets/avatar-1.png" alt="Transaction 3">
+
+              <div class="list__user-detail">
+                <span class="list__stuff">LPG 15 Kg</span>
+                <h3 class="list__name">Alexander Riuji</h3>
+              </div>
+            </div>
+
+            <div class="list__detail-transaction">
+              <span class="list__label-price">Harga</span>
+              <h3 class="list__price">Rp. 150.000</h3>
+            </div>
+          </div>
+
+          <div class="transaction__list">
+            <div class="list__user">
+              <img width="49" height="48" src="./assets/avatar-2.png" alt="Transaction 4">
+
+              <div class="list__user-detail">
+                <span class="list__stuff">LPG 15 Kg</span>
+                <h3 class="list__name">Alexander Riuji</h3>
+              </div>
+            </div>
+
+            <div class="list__detail-transaction">
+              <span class="list__label-price">Harga</span>
+              <h3 class="list__price">Rp. 150.000</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- History -->
+    <div class="history">
+      <h1 class="history__title">
+        Riwayat Tambah Saldo
+      </h1>
+
+      <div class="history__lists">
+        <div class="history__list">
+          <div class="history__detail">
+            <div class="history__icon">
+              <svg
+                width="11"
+                height="11" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill="#fff"
+                  d="M5.334.217v7.65L1.821 4.352l-.886.892 5.028 5.028 5.028-5.028-.886-.886L6.59 7.866V.218H5.334z" />
+              </svg>
+            </div>
+
+            <div class="history__data">
+              <h1 class="history__desc">Tambah Saldo</h1>
+              <span class="history__date">20 Juli 2021</span>
+            </div>
+          </div>
+
+          <h1 class="history__total">Rp 5.000.000</h1>
+        </div>
+
+        <div class="history__list">
+          <div class="history__detail">
+            <div class="history__icon">
+              <svg
+                width="11"
+                height="11" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill="#fff"
+                  d="M5.334.217v7.65L1.821 4.352l-.886.892 5.028 5.028 5.028-5.028-.886-.886L6.59 7.866V.218H5.334z" />
+              </svg>
+            </div>
+
+            <div class="history__data">
+              <h1 class="history__desc">Tambah Saldo</h1>
+              <span class="history__date">1 Juni 2021</span>
+            </div>
+          </div>
+
+          <h1 class="history__total">Rp 5.000.000</h1>
+        </div>
+
+        <div class="history__list">
+          <div class="history__detail">
+            <div class="history__icon">
+              <svg
+                width="11"
+                height="11" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill="#fff"
+                  d="M5.334.217v7.65L1.821 4.352l-.886.892 5.028 5.028 5.028-5.028-.886-.886L6.59 7.866V.218H5.334z" />
+              </svg>
+            </div>
+
+            <div class="history__data">
+              <h1 class="history__desc">Tambah Saldo</h1>
+              <span class="history__date">15 Mei 2021</span>
+            </div>
+          </div>
+
+          <h1 class="history__total">Rp 5.000.000</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Menus -->
+  <div class="menus">
+    <svg
+      width="27"
+      height="26"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill="#C6C4C4"
+        d="M.186 13.381L12.375 1.192a1.312 1.312 0 011.855 0l12.189 12.19h-2.624v10.492c0 .725-.587 1.312-1.311 1.312h-6.558v-9.181h-5.247v9.18H4.121a1.312 1.312 0 01-1.312-1.31V13.38H.186z" />
+    </svg>
+
+    <svg
+      width="24"
+      height="20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill="#C6C4C4"
+        d="M5.333 8.758L.1 14.005l5.233 5.246v-3.935h9.195v-2.623H5.333V8.758zM23.71 6.135L18.476.888v3.935H9.281v2.623h9.195v3.935l5.233-5.246z" />
+    </svg>
+
+    <svg
+      width="25"
+      height="25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill="red"
+        d="M21.688 24.251H3.326a2.623 2.623 0 01-2.624-2.623V3.265A2.623 2.623 0 013.326.642h18.362a2.623 2.623 0 012.624 2.623v18.363a2.623 2.623 0 01-2.624 2.623zM3.326 3.265v18.363h18.362V3.265H3.326zm15.74 15.74h-2.624V9.822h2.623v9.181zm-5.247 0h-2.624V5.887h2.624v13.117zm-5.247 0H5.95v-6.559h2.623v6.559z" />
+    </svg>
+
+    <svg
+      width="22"
+      height="26"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill="#C6C4C4"
+        d="M4.551 6.823a6.558 6.558 0 1113.116 0 6.558 6.558 0 01-13.116 0zm6.558 3.935a3.935 3.935 0 100-7.87 3.935 3.935 0 000 7.87zM3.69 17.766a10.493 10.493 0 00-3.074 7.42H3.24a7.87 7.87 0 0115.74 0h2.623a10.493 10.493 0 00-17.912-7.42z" />
+    </svg>
+
+    <svg
+      width="24"
+      height="28"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill="#C6C4C4"
+        d="M10.712 27.186a2.623 2.623 0 01-2.624-2.623h5.247a2.623 2.623 0 01-2.623 2.623zm10.493-3.935H.219v-2.623l2.623-1.312v-7.214c0-4.54 1.864-7.485 5.246-8.29V.954h5.247v2.86c3.383.802 5.246 3.746 5.246 8.29v7.213l2.624 1.312v2.623zM10.712 5.872a4.722 4.722 0 00-4.1 1.902 7.466 7.466 0 00-1.147 4.328v8.526h10.493v-8.526a7.468 7.468 0 00-1.148-4.328 4.722 4.722 0 00-4.098-1.902z" />
+    </svg>
+  </div>
+</body>
+
+</html>
