@@ -1,0 +1,32 @@
+.work-history__title {
+  color: #181725;
+  font-size: 23px;
+  margin-bottom: 16px;
+}
+
+.work-history__lists {
+  gap: 16px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+.work-history__list {
+  width: 47%;
+}
+
+.work-history__year {
+  color: #440099;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.work-history__desc {
+  color: #92929d;
+  font-size: 14px;
+  line-height: 25px;
+}

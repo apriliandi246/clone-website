@@ -1,0 +1,136 @@
+.candidate {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.candidate__profile {
+  width: 426px;
+  padding: 16px;
+  position: relative;
+  border-radius: 26px;
+  background-color: #fff;
+  box-shadow: 0px 6.38599px 61.7312px rgba(196, 203, 214, 0.103611);
+}
+
+.edit-profile {
+  top: 0;
+  right: 0;
+  margin-top: 28px;
+  position: absolute;
+  margin-right: 22px;
+  border-radius: 12px;
+}
+
+.candidate__name {
+  color: #0a1629;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: -24px;
+  margin-bottom: 8px;
+}
+
+.candidate__role {
+  font-size: 14px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.candidate__address {
+  gap: 6px;
+  padding: 10px;
+  display: flex;
+  color: #7d8592;
+  border-radius: 8px;
+  align-items: center;
+  background-color: #edf2fd;
+}
+
+.line {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  background-color: #e4e6e8;
+}
+
+.candidate__data {
+  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.candidate-star {
+  gap: 12px;
+  color: #fff;
+  width: 117px;
+  padding: 12px;
+  display: flex;
+  font-size: 20px;
+  border-radius: 34px;
+  align-items: center;
+  background-color: #26c0e2;
+  justify-content: space-between;
+}
+
+.candidate-star span {
+  font-weight: 600;
+}
+
+.candidate-clock {
+  width: 154px;
+  padding: 12px;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  border-radius: 34px;
+  background-color: #ffd66b;
+}
+
+.candidate-clock span {
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+.candidate-clock span:last-child {
+  margin-left: 17px;
+}
+
+.candidate-salary {
+  color: #fff;
+  width: 282px;
+  padding: 14px;
+  display: flex;
+  font-size: 24px;
+  border-radius: 43px;
+  align-items: center;
+  background-color: #ff8f6b;
+}
+
+.candidate-salary span {
+  font-weight: 700;
+  margin-left: 16px;
+}
+
+.candidate__summary {
+  padding: 18px;
+  border-radius: 23px;
+  background-color: #fff;
+  box-shadow: 0px 6.38599px 61.7312px rgba(196, 203, 214, 0.103611);
+}
+
+.candidate__summary-title {
+  color: #181725;
+  font-size: 25px;
+  margin-bottom: 16px;
+}
+
+.candidate__summary p {
+  color: #92929d;
+  line-height: 25px;
+  margin-bottom: 16px;
+}
+
+.candidate__summary p:last-child {
+  margin-bottom: 0;
+}

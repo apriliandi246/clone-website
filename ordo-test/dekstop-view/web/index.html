@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Dekstop View</title>
+</head>
+
+<body>
+  <nav class="navbar position-fixed flex align-items-center justify-content-between">
+    <div class="flex align-items-center">
+      <svg
+        width="31"
+        height="16" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill="#92929D" d="M0 0h31v3H0zM0 13h31v3H0z" />
+      </svg>
+
+      <div class="navbar__logo flex align-items-center">
+        <img src="./assets/logo.png" alt="Recruiter Logo">
+        <h1 class="navbar__company-name font-medium">Recruiter Network.<span class="domain">io</span></h1>
+      </div>
+    </div>
+
+    <div class="navbar__right-menus flex align-items-center">
+      <svg
+        width="32"
+        height="33"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          fill="#38057F"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M12.03 7.188a4 4 0 017.943 0 9.631 9.631 0 015.658 8.775v6.69l2.228 4.413A1.333 1.333 0 0126.669 29H5.334a1.333 1.333 0 01-1.19-1.934l2.227-4.413v-6.69a9.631 9.631 0 015.658-8.775zm3.973-.855h-.001z" />
+        <path d="M12.002 29a4 4 0 108 0h-2.667a1.333 1.333 0 01-2.666 0h-2.667z" fill="#B49ED6" />
+        <rect x="24" width="8" height="8" rx="4" fill="#FC5A5A" />
+      </svg>
+
+      <div class="navbar__language">
+        <span class="language_1 font-bold">NL</span> | <span class="language_2 font-bold">EN</span>
+      </div>
+
+      <div class="flex align-items-center">
+        <img src="./assets/avatar-1.png" alt="Avatar 1">
+        <h1 class="navbar__name">Andrei</h1>
+      </div>
+
+      <svg width="18" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 9l9-9H0l9 9z" fill="#92929D" />
+      </svg>
+    </div>
+  </nav>
+
+  <aside class="sidebar position-fixed">
+    <div class="sidebar__lists">
+      <h2 class="sidebar__menu font-bold">main</h2>
+
+      <a href="#" class="sidebar__list font-medium position-relative flex align-items-center">
+        <svg
+          width="27"
+          height="26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect
+            rx="2"
+            x="3.5"
+            y="3.25"
+            width="19.5"
+            height="19.5"
+            stroke="#97A0C3"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path
+            stroke="#97A0C3"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.5 9.75H23M10 22.75v-13" />
+        </svg>
+        Dashboard
+
+        <div class="navbar__menu-lock" style="margin-right: 76px;">
+          <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5.95 1.03a2.294 2.294 0 00-2.292 2.293v.916H3.2a.918.918 0 00-.917.917v4.125c0 .505.412.917.917.917h5.5a.918.918 0 00.917-.917V5.156a.918.918 0 00-.917-.917h-.458v-.916A2.294 2.294 0 005.95 1.03zM4.575 3.324c0-.758.617-1.375 1.375-1.375s1.375.617 1.375 1.375v.916h-2.75v-.916zM8.701 9.28H6.408V8.237A.914.914 0 005.95 6.53a.914.914 0 00-.458 1.706V9.28H3.2V5.156h5.5l.001 4.125z"
+              fill="#AB91D2" />
+          </svg>
+        </div>
+      </a>
+
+      <a href="#" class="sidebar__list font-medium position-relative flex align-items-center">
+        <svg
+          width="27"
+          height="26"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect
+            rx="2"
+            x="3.5"
+            y="3.25"
+            width="19.5"
+            height="19.5"
+            stroke="#97A0C3"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path
+            stroke="#97A0C3"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.5 9.75H23M10 22.75v-13" />
+        </svg>
+        Jobs
+      </a>
+
+      <a href="#" class="sidebar__list font-medium position-relative flex align-items-center">
+        <svg width="24" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#prefix__clip0)" fill="#97A0C3">
+            <path
+              d="M21.758 10.008c-.666 0-1.232.439-1.423 1.043h-.962a7.606 7.606 0 00-1.918-4.621l.683-.683a1.485 1.485 0 00.818.162l.698 1.685a.45.45 0 10.83-.344l-.698-1.684a1.494 1.494 0 00-.96-2.634c-.398 0-.772.154-1.054.436a1.482 1.482 0 00-.437 1.055c0 .244.058.479.168.689l-.683.683a7.606 7.606 0 00-4.62-1.918v-.962c.272-.087.511-.25.692-.464l1.684.698a.447.447 0 00.588-.243.45.45 0 00-.244-.587l-1.684-.698A1.494 1.494 0 0011.75 0c-.823 0-1.492.67-1.492 1.492 0 .666.439 1.232 1.043 1.423v.962A7.605 7.605 0 006.68 5.795l-.683-.683a1.485 1.485 0 00.162-.818l1.685-.698a.45.45 0 10-.344-.83l-1.684.698a1.482 1.482 0 00-1.142-.533 1.494 1.494 0 10.689 2.816l.682.683a7.605 7.605 0 00-1.918 4.62h-.962a1.496 1.496 0 00-.464-.692L3.4 8.673a.45.45 0 10-.83-.343l-.698 1.684A1.494 1.494 0 00.25 11.5c0 .823.67 1.492 1.492 1.492.666 0 1.232-.439 1.423-1.043h.962a7.606 7.606 0 001.918 4.621l-.683.683a1.485 1.485 0 00-.818-.163l-.698-1.684a.45.45 0 10-.83.344l.698 1.684a1.494 1.494 0 00.96 2.634c.398 0 .772-.154 1.054-.436.282-.282.437-.657.437-1.055 0-.244-.058-.479-.168-.689l.683-.683a7.606 7.606 0 004.62 1.918v.962c-.272.087-.511.25-.692.464l-1.685-.698a.45.45 0 10-.343.83l1.684.698A1.494 1.494 0 0011.75 23c.823 0 1.492-.67 1.492-1.492 0-.666-.439-1.232-1.043-1.423v-.962a7.606 7.606 0 004.621-1.918l.683.683a1.485 1.485 0 00-.163.818l-1.684.698a.45.45 0 00.344.83l1.684-.698a1.482 1.482 0 001.142.532c.4 0 .774-.155 1.056-.436a1.494 1.494 0 00-1.744-2.38l-.683-.682a7.606 7.606 0 001.918-4.62h.962c.087.272.25.511.464.692l-.698 1.684a.45.45 0 10.83.344l.698-1.684A1.494 1.494 0 0023.25 11.5c0-.823-.67-1.492-1.492-1.492zm-3.351-6.004a.59.59 0 01.84 0 .594.594 0 01-.193.968.592.592 0 01-.647-.13.59.59 0 010-.838zm-13.314.839a.59.59 0 01-.84 0 .594.594 0 11.969-.647.592.592 0 01-.129.647zm-3.351 7.25a.594.594 0 11.001-1.188.594.594 0 01-.001 1.189zm3.351 6.903a.59.59 0 01-.84 0 .594.594 0 01.193-.968.593.593 0 01.647.968zm13.314-.839a.59.59 0 01.84 0 .594.594 0 11-.969.648v-.001a.593.593 0 01.13-.647zm-.135-8.354a6.206 6.206 0 00-1.281-.643 12.163 12.163 0 00-2.308-.595 12.19 12.19 0 00-.595-2.302 6.229 6.229 0 00-.645-1.286 6.764 6.764 0 014.829 4.826zM14.015 11.5c0 .738-.043 1.458-.126 2.14-.68.082-1.4.125-2.139.125-.739 0-1.458-.043-2.14-.125a17.89 17.89 0 01-.125-2.14c0-.738.043-1.458.125-2.14a17.979 17.979 0 012.14-.125c.738 0 1.458.042 2.14.124.082.683.125 1.403.125 2.141zM11.156 1.492a.594.594 0 111.189.001.594.594 0 01-1.189-.001zm.594 3.27c.508 0 1.068.68 1.498 1.818.208.551.376 1.18.502 1.86a19.017 19.017 0 00-2-.104c-.685 0-1.356.036-2 .104.126-.68.294-1.309.502-1.86.43-1.138.99-1.818 1.498-1.818zm-1.693.215a6.23 6.23 0 00-.645 1.286 12.185 12.185 0 00-.595 2.302c-.849.14-1.631.34-2.308.595-.502.19-.93.406-1.28.643a6.763 6.763 0 014.828-4.826zm-3.23 5.024c.55-.208 1.18-.377 1.864-.503a18.911 18.911 0 00-.105 2.002c0 .685.036 1.357.105 2.002a10.886 10.886 0 01-1.865-.503c-1.136-.429-1.814-.99-1.814-1.499 0-.51.678-1.07 1.814-1.5zm-1.599 3.196c.35.237.779.453 1.281.643.677.255 1.459.456 2.308.595.14.845.34 1.626.595 2.302.19.504.407.934.645 1.286a6.764 6.764 0 01-4.829-4.826zm7.116 8.311a.594.594 0 11-1.189-.001.594.594 0 011.189.001zm-.594-3.27c-.508 0-1.068-.68-1.498-1.818a10.923 10.923 0 01-.502-1.86c.644.068 1.315.104 2 .104s1.356-.036 2-.104c-.126.68-.294 1.309-.502 1.86-.43 1.138-.99 1.818-1.498 1.818zm1.693-.215a6.23 6.23 0 00.645-1.286c.256-.676.456-1.457.595-2.302.849-.14 1.631-.34 2.308-.595.502-.19.93-.406 1.28-.643a6.764 6.764 0 01-4.828 4.826zm3.23-5.024c-.55.208-1.18.377-1.864.502.069-.644.105-1.316.105-2.001 0-.685-.036-1.357-.105-2.002.684.126 1.313.295 1.865.503 1.136.429 1.814.99 1.814 1.499 0 .51-.678 1.07-1.814 1.5zm5.085-.905a.594.594 0 11.001-1.189.594.594 0 01-.001 1.189z" />
+            <path
+              d="M16.064 2.793l-.012-.005a.45.45 0 00-.345.829l.011.005a.448.448 0 10.346-.83zM9.23 2.536a.45.45 0 00-.588-.243l-.012.005a.45.45 0 10.345.83l.011-.005a.45.45 0 00.243-.587zM3.629 6.944a.45.45 0 00-.587.243l-.005.012a.45.45 0 00.83.343l.005-.011a.45.45 0 00-.243-.587zM3.378 14.277l-.004-.012a.45.45 0 00-.832.341l.005.012a.45.45 0 00.831-.34zM7.794 19.383l-.012-.005a.45.45 0 10-.346.83l.012.004a.447.447 0 00.587-.241.45.45 0 00-.241-.588zM15.113 20.116a.45.45 0 00-.586-.244l-.012.005a.45.45 0 10.342.83l.011-.004a.45.45 0 00.245-.587zM20.22 15.214a.45.45 0 00-.587.243l-.005.012a.45.45 0 00.83.344l.005-.012a.45.45 0 00-.243-.587zM20.957 8.393l-.005-.012a.45.45 0 00-.83.343l.005.012a.45.45 0 10.83-.343z" />
+          </g>
+          <defs>
+            <clipPath id="prefix__clip0">
+              <path fill="#fff" transform="translate(.25)" d="M0 0h23v23H0z" />
+            </clipPath>
+          </defs>
+        </svg>
+        Talentpool
+      </a>
+
+      <a href="#" class="sidebar__list font-medium position-relative flex align-items-center">
+        <svg width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#prefix__clip0)">
+            <path
+              d="M22.25 10.914v3.825c-.045 1.14-1.674 1.139-1.719 0V13.04l-2.735 2.735a.86.86 0 01-.607.252h-4.337l-5.72 5.72a.86.86 0 11-1.216-1.215l5.973-5.973a.86.86 0 01.607-.251h4.337l2.535-2.535h-1.844c-1.14-.046-1.14-1.674 0-1.719h3.867a.86.86 0 01.859.86zm-.86 6.403a.86.86 0 00-.859.859v2.965c.046 1.14 1.674 1.139 1.719 0v-2.965a.86.86 0 00-.86-.86zm-3.437 0a.86.86 0 00-.86.859v2.965c.046 1.14 1.675 1.139 1.72 0v-2.965a.86.86 0 00-.86-.86zm-3.437 0a.86.86 0 00-.86.859v2.965c.046 1.14 1.674 1.139 1.72 0v-2.965a.86.86 0 00-.86-.86zm-3.438 2.62a.86.86 0 00-.859.86v.344c.045 1.14 1.674 1.139 1.719 0v-.344a.86.86 0 00-.86-.86zm-1.761-5.37a.86.86 0 00.86-.86v-.527c2.693-.998 2.043-4.96-.86-5.016-1.143-.046-1.137-1.665 0-1.712a.79.79 0 01.755.501.86.86 0 001.583-.671 2.506 2.506 0 00-1.479-1.404v-.58c-.045-1.14-1.674-1.14-1.719 0v.582c-2.69.998-2.048 4.948.86 5.003 1.136.047 1.143 1.678 0 1.725a.913.913 0 01-.806-.53.86.86 0 00-1.568.704 2.656 2.656 0 001.514 1.392v.533c0 .475.385.86.86.86zm-2.965 2.942a.86.86 0 00.308-1.662C-.823 12.826 1.187 1.854 9.274 1.719a7.287 7.287 0 017.194 6.035.86.86 0 101.693-.296 9.034 9.034 0 00-3.053-5.318C9.315-2.81.225 1.394.251 9.024c-.044 3.668 2.363 7.153 5.793 8.428a.857.857 0 00.308.057z"
+              fill="#97A0C3" />
+          </g>
+          <defs>
+            <clipPath id="prefix__clip0">
+              <path fill="#fff" transform="translate(.25)" d="M0 0h22v22H0z" />
+            </clipPath>
+          </defs>
+        </svg>
+        Invoice
+      </a>
+    </div>
+
+    <div class="sidebar__lists">
+      <h2 class="sidebar__menu">comunications</h2>
+
+      <a href="#" class="sidebar__list font-medium position-relative flex align-items-center">
+        <svg width="29" height="29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity=".8">
+            <path clip-rule="evenodd"
+              d="M4.917 23.329a1 1 0 001 1h16.666a1 1 0 001-1V6.662a1 1 0 00-1-1H5.917a1 1 0 00-1 1V23.33z"
+              stroke="#97A0C3"
+              stroke-width="1.5" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M11.066 11.489a.5.5 0 00-.304.897l2.806 2.142a1 1 0 001.214 0l2.806-2.142a.5.5 0 00-.304-.897l-1.942.002V9.662a.5.5 0 00-.5-.5h-1.34a.5.5 0 00-.5.5v1.83l-1.936-.003z"
+              fill="#97A0C3" />
+            <path d="M23.583 17.552H17.25a1 1 0 00-1 1v.683a1 1 0 01-1 1h-2a1 1 0 01-1-1v-.683a1 1 0 00-1-1H5.536"
+              stroke="#97A0C3" stroke-width="1.5" />
+          </g>
+        </svg>
+        Inbox
+      </a>
+
+      <a href="#" class="sidebar__list font-medium position-relative flex align-items-center">
+        <svg width="29" height="29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity=".8" stroke="#97A0C3" stroke-width="1.5">
+            <path clip-rule="evenodd"
+              d="M4.917 6.662a1 1 0 011-1h16.666a1 1 0 011 1v12.612a1 1 0 01-1 1H11a1 1 0 00-.676.263l-3.73 3.422c-.642.588-1.676.133-1.676-.737V6.662z" />
+            <path d="M15.417 13.829h3.5M9.583 13.829h3.5" />
+          </g>
+        </svg>
+        Chat
+
+        <div class="navbar__menu-lock" style="margin-right: 135px;">
+          <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5.95 1.03a2.294 2.294 0 00-2.292 2.293v.916H3.2a.918.918 0 00-.917.917v4.125c0 .505.412.917.917.917h5.5a.918.918 0 00.917-.917V5.156a.918.918 0 00-.917-.917h-.458v-.916A2.294 2.294 0 005.95 1.03zM4.575 3.324c0-.758.617-1.375 1.375-1.375s1.375.617 1.375 1.375v.916h-2.75v-.916zM8.701 9.28H6.408V8.237A.914.914 0 005.95 6.53a.914.914 0 00-.458 1.706V9.28H3.2V5.156h5.5l.001 4.125z"
+              fill="#AB91D2" />
+          </svg>
+        </div>
+      </a>
+    </div>
+
+    <div class="sidebar__lists">
+      <h2 class="sidebar__menu">management</h2>
+
+      <a href="#" class="sidebar__list font-medium position-relative flex align-items-center">
+        <svg width="25" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M24.25 19.002V5.175a1.998 1.998 0 00-1.999-1.993H8.211c-.38 0-.732-.207-.915-.54l-.339-.613A2 2 0 005.206.996H3.249A1.998 1.998 0 001.25 2.989V19c0 1.1.897 1.995 1.999 1.995H22.25a1.999 1.999 0 001.999-1.994zM3.249 1.948h1.957c.38 0 .732.207.915.54l.339.613A2 2 0 008.21 4.134h14.04c.576 0 1.044.467 1.044 1.041v1.542H2.206V2.989c0-.575.468-1.041 1.044-1.041zm-1.045 5.72v11.334c0 .574.469 1.042 1.045 1.042H22.25c.576 0 1.044-.468 1.044-1.043V7.67H2.206z"
+            fill="#C1BEBE" />
+          <path
+            d="M7.296 2.642l-.263.145.263-.145zm-.339-.613l-.262.144.262-.144zm-.836.459l.263-.145-.263.145zm.339.613l.262-.144-.262.144zm16.835 3.616v.3h.3v-.3h-.3zm-21.09 0h-.3v.3h.3v-.3zm0 .952v-.3h-.3v.3h.3zm21.09 0h.3v-.3h-.3v.3zm.655-2.494v13.826h.6V5.175h-.6zm-1.699-1.693c.937 0 1.699.761 1.699 1.693h.6a2.298 2.298 0 00-2.299-2.293v.6zm-14.04 0h14.04v-.6H8.211v.6zm-1.178-.695c.237.429.688.695 1.178.695v-.6a.746.746 0 01-.653-.385l-.525.29zm-.338-.614l.338.614.525-.29-.338-.613-.525.29zm-1.49-.877a1.7 1.7 0 011.49.877l.525-.29A2.3 2.3 0 005.206.697v.6zm-1.956 0h1.957v-.6H3.249v.6zM1.55 2.989c0-.933.762-1.693 1.699-1.693v-.6A2.298 2.298 0 00.95 2.989h.6zM1.55 19V2.99h-.6V19h.6zm1.699 1.695c-.937 0-1.699-.761-1.699-1.695h-.6a2.299 2.299 0 002.299 2.295v-.6zm19.002 0H3.25v.6H22.25v-.6zM23.95 19c0 .934-.762 1.695-1.699 1.695v.6a2.299 2.299 0 002.299-2.294h-.6zM5.206 1.648H3.249v.6h1.957v-.6zm1.178.695a1.346 1.346 0 00-1.178-.695v.6c.271 0 .522.148.653.385l.525-.29zm.338.614l-.338-.614-.525.29.338.613.525-.29zm1.49.877a1.7 1.7 0 01-1.49-.877l-.525.29A2.3 2.3 0 008.21 4.433v-.6zm14.04 0H8.211v.6h14.04v-.6zm1.344 1.341c0-.74-.604-1.34-1.345-1.34v.6c.411 0 .744.333.744.74h.6zm0 1.542V5.175h-.6v1.542h.6zm-21.392.3h21.091v-.6H2.206v.6zm-.3-4.028v3.728h.6V2.989h-.6zM3.25 1.648c-.74 0-1.345.6-1.345 1.34h.6c0-.407.334-.74.745-.74v-.6zm-.744 17.354V7.668h-.6V19h.6zm.744.742a.744.744 0 01-.744-.742h-.6c0 .74.603 1.342 1.344 1.342v-.6zm19.002 0H3.25v.6H22.25v-.6zm.744-.742a.744.744 0 01-.744.742v.6c.741 0 1.345-.602 1.345-1.343h-.6zm0-11.333V19h.6V7.67h-.6zm-20.79.3h21.09v-.6H2.206v.6z"
+            fill="#C1BEBE" />
+        </svg>
+        Publishing
+
+        <div class="navbar__menu-lock" style="margin-right: 85px;">
+          <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5.95 1.03a2.294 2.294 0 00-2.292 2.293v.916H3.2a.918.918 0 00-.917.917v4.125c0 .505.412.917.917.917h5.5a.918.918 0 00.917-.917V5.156a.918.918 0 00-.917-.917h-.458v-.916A2.294 2.294 0 005.95 1.03zM4.575 3.324c0-.758.617-1.375 1.375-1.375s1.375.617 1.375 1.375v.916h-2.75v-.916zM8.701 9.28H6.408V8.237A.914.914 0 005.95 6.53a.914.914 0 00-.458 1.706V9.28H3.2V5.156h5.5l.001 4.125z"
+              fill="#AB91D2" />
+          </svg>
+        </div>
+      </a>
+
+      <a href="#" class="sidebar__list font-medium position-relative flex align-items-center"
+        style="margin-right: 98px;">
+        <svg width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M18.434 20.217c.136.602-.393.977-.918.666L11.9 17.552a.393.393 0 00-.297 0l-5.618 3.331c-.53.315-1.051-.07-.917-.666l1.436-6.364a.391.391 0 00-.091-.282L1.503 9.265c-.464-.408-.257-1.021.35-1.078l6.506-.602a.392.392 0 00.24-.174l2.584-5.993c.244-.566.893-.56 1.134 0l2.584 5.993c.03.07.165.167.24.174l6.506.602c.615.057.809.675.35 1.078L17.09 13.57a.391.391 0 00-.092.281l1.437 6.365zm-12.4-.357l5.126-3.05c.337-.2.841-.202 1.18 0l5.124 3.038-1.31-5.806a1.23 1.23 0 01.364-1.12L20.988 9l-5.926-.555a1.232 1.232 0 01-.955-.693l-2.362-5.476-2.351 5.476a1.233 1.233 0 01-.955.693l-5.929.55 4.472 3.927c.295.258.452.737.365 1.12L6.034 19.86z"
+            fill="#C1BEBE" />
+          <path
+            d="M17.516 20.883l-.178.301.178-.3zm.918-.666l.341-.077-.341.077zm-6.535-2.665l-.179.301.179-.301zm-.297 0l.178.301-.178-.301zm-5.618 3.331l-.178-.3.178.3zm-.917-.666l.341.078-.341-.078zm1.436-6.364l.342.077-.342-.078zm-.091-.282l-.231.263.23-.263zM1.503 9.265l-.23.263.23-.263zm.35-1.078l.033.349-.032-.349zm6.506-.602l-.032-.349.032.349zm.24-.174l-.321-.139.321.139zm2.584-5.993l-.321-.139.321.14zm1.134 0l.322-.139-.322.14zm2.584 5.993l.322-.139-.322.139zm.24.174l.033-.349-.033.349zm6.506.602l.032-.348-.032.348zm.35 1.078l.231.263-.23-.263zM17.09 13.57l-.23-.263.23.263zm-.092.281l.342-.077-.342.077zM11.16 16.81l-.178-.3.178.3zM6.034 19.86l-.341-.077-.18.794.7-.416-.179-.3zm6.306-3.05l-.178.3.178-.3zm5.124 3.038l-.178.3.699.415-.18-.792-.34.077zm-1.31-5.806l-.342.078.341-.078zm.364-1.12l.23.263-.23-.263zM20.988 9l.23.263.611-.536-.808-.075-.033.348zm-5.926-.555l.032-.348-.032.348zm-.955-.693l-.321.139.32-.139zm-2.362-5.476l.322-.139-.322-.747-.321.748.321.138zM9.394 7.752l.321.139-.321-.139zm-.955.693l.032.348-.032-.348zm-5.929.55l-.032-.35-.81.076.612.536.23-.263zm4.472 3.927l-.23.263.23-.263zm.365 1.12l-.341-.077.341.077zm9.99 7.142c.364.216.78.216 1.09-.007.312-.224.442-.62.348-1.037l-.683.154c.042.186-.024.279-.074.315-.051.036-.162.069-.323-.027l-.357.602zm-5.617-3.33l5.618 3.33.357-.602-5.618-3.331-.357.602zm.06 0a.203.203 0 01-.046.02h-.002.005a.162.162 0 01.026 0h.004a.204.204 0 01-.047-.02l.357-.603a.657.657 0 00-.327-.078c-.076 0-.211.01-.327.078l.357.602zm-5.617 3.33l5.617-3.33-.357-.603-5.617 3.331.357.602zM4.725 20.14c-.093.413.036.808.345 1.034.31.226.726.228 1.093.01l-.357-.602c-.164.097-.273.063-.323.027-.051-.037-.116-.132-.075-.315l-.683-.154zm1.437-6.365L4.725 20.14l.683.154 1.437-6.364-.683-.155zm.019.059a.202.202 0 01-.035-.04v.001l.002.004a.157.157 0 01.009.028v-.001-.008c0-.006 0-.021.005-.043l.683.155a.657.657 0 00-.027-.336.657.657 0 00-.176-.286l-.461.526zM1.272 9.528l4.909 4.306.461-.526L1.734 9l-.462.527zm.55-1.69c-.421.04-.758.284-.878.647-.12.364.008.761.328 1.043L1.734 9c-.143-.125-.144-.239-.125-.297.02-.06.09-.15.277-.168l-.065-.697zm6.505-.602L1.82 7.84l.065.697 6.505-.603-.064-.697zm-.05.036a.204.204 0 01.028-.046l-.001.001a.1.1 0 01-.013.01.15.15 0 01-.014.01.202.202 0 01.05-.01l.064.696a.658.658 0 00.311-.129.657.657 0 00.218-.255l-.642-.277zm2.585-5.993L8.278 7.272l.642.277 2.585-5.992-.643-.278zm1.777 0c-.168-.388-.504-.632-.886-.633-.384-.002-.722.241-.891.633l.643.278c.075-.175.183-.212.245-.211.063 0 .172.039.246.21l.643-.277zm2.584 5.993l-2.584-5.993-.643.278 2.584 5.992.643-.277zm-.05-.036a.204.204 0 01.05.011h.002c0 .001 0 0 0 0l-.004-.002a.153.153 0 01-.021-.015l-.003-.003-.002-.001.002.002a.206.206 0 01.026.044l-.643.277a.657.657 0 00.22.256.658.658 0 00.31.128l.064-.697zm6.506.603l-6.505-.603-.065.697 6.505.603.065-.697zm.55 1.689c.317-.28.446-.674.329-1.039-.118-.365-.454-.61-.879-.65l-.064.697c.19.017.258.109.276.167.02.06.016.175-.125.298l.462.527zm-4.91 4.306l4.91-4.306L21.765 9l-4.908 4.307.462.526zm.02-.059a.209.209 0 01.005.052v-.004a.137.137 0 01.01-.028l.001-.002-.001.003a.2.2 0 01-.034.038l-.462-.526a.657.657 0 00-.176.287.657.657 0 00-.026.335l.683-.155zm1.436 6.365l-1.436-6.365-.683.155 1.436 6.364.683-.154zm-7.794-3.632L5.855 19.56l.358.601 5.126-3.051-.358-.602zm1.538 0a1.583 1.583 0 00-1.537 0l.357.602a.887.887 0 01.823 0l.357-.602zm5.124 3.039l-5.124-3.039-.357.602 5.124 3.039.357-.602zm-1.831-5.428l1.31 5.806.684-.154-1.311-5.806-.683.155zm.475-1.46c-.392.344-.59.954-.475 1.46l.683-.154a.883.883 0 01.254-.78l-.462-.527zm4.47-3.922l-4.47 3.921.462.527 4.47-3.922-.462-.526zm-5.728.056l5.926.556.066-.697-5.927-.555-.065.696zm-1.243-.902c.206.48.727.855 1.243.902l.065-.697a.885.885 0 01-.666-.482l-.643.277zm-2.362-5.477l2.362 5.477.642-.277-2.361-5.477-.643.277zM9.715 7.89l2.352-5.476-.643-.276-2.352 5.476.643.276zm-1.244.903a1.581 1.581 0 001.244-.902l-.643-.277a.885.885 0 01-.665.482l.064.697zm-5.928.55l5.928-.55-.064-.697-5.929.55.065.697zm4.67 3.316L2.741 8.73l-.462.526 4.472 3.928.462-.526zm.476 1.46a1.579 1.579 0 00-.476-1.46l-.461.526a.883.883 0 01.254.78l.683.155zm-1.313 5.818l1.313-5.818-.683-.154-1.313 5.818.683.154z"
+            fill="#C1BEBE" />
+        </svg>
+        Flexbase
+
+        <div class="navbar__menu-lock">
+          <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5.95 1.03a2.294 2.294 0 00-2.292 2.293v.916H3.2a.918.918 0 00-.917.917v4.125c0 .505.412.917.917.917h5.5a.918.918 0 00.917-.917V5.156a.918.918 0 00-.917-.917h-.458v-.916A2.294 2.294 0 005.95 1.03zM4.575 3.324c0-.758.617-1.375 1.375-1.375s1.375.617 1.375 1.375v.916h-2.75v-.916zM8.701 9.28H6.408V8.237A.914.914 0 005.95 6.53a.914.914 0 00-.458 1.706V9.28H3.2V5.156h5.5l.001 4.125z"
+              fill="#AB91D2" />
+          </svg>
+        </div>
+      </a>
+
+      <a href="#" class="sidebar__list font-medium position-relative flex align-items-center">
+        <svg width="24" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.553 18.541v-1.899c0-2.097-1.7-3.798-3.798-3.798H5.159a3.798 3.798 0 00-3.798 3.798v1.9"
+            stroke="#C1BEBE"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="8.957" cy="5.248" r="3.798" stroke="#C1BEBE" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M22.25 18.541v-1.899a3.798 3.798 0 00-2.849-3.674M15.604 1.574a3.798 3.798 0 010 7.358"
+            stroke="#C1BEBE"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        Assesments
+
+        <div class="navbar__menu-lock" style="margin-right: 66px;">
+          <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5.95 1.03a2.294 2.294 0 00-2.292 2.293v.916H3.2a.918.918 0 00-.917.917v4.125c0 .505.412.917.917.917h5.5a.918.918 0 00.917-.917V5.156a.918.918 0 00-.917-.917h-.458v-.916A2.294 2.294 0 005.95 1.03zM4.575 3.324c0-.758.617-1.375 1.375-1.375s1.375.617 1.375 1.375v.916h-2.75v-.916zM8.701 9.28H6.408V8.237A.914.914 0 005.95 6.53a.914.914 0 00-.458 1.706V9.28H3.2V5.156h5.5l.001 4.125z"
+              fill="#AB91D2" />
+          </svg>
+        </div>
+      </a>
+    </div>
+  </aside>
+
+  <div class="container">
+    <div class="menu__lists">
+      <button class="menu__list download">
+        <svg width="29" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.098 19.313h2.026v-6.625a.22.22 0 01.219-.22h1.64a.22.22 0 01.219.22v6.625h2.02c.184 0 .285.21.173.353l-3.063 3.874a.219.219 0 01-.344 0l-3.063-3.874a.218.218 0 01.173-.353z"
+            fill="#fff" />
+          <path
+            d="M5.973 10.027c1.253-3.303 4.444-5.652 8.182-5.652a8.75 8.75 0 018.18 5.65 5.471 5.471 0 014.075 5.287 5.467 5.467 0 01-5.466 5.47h-1.096a.22.22 0 01-.22-.22v-1.64a.22.22 0 01.22-.219h1.096a3.39 3.39 0 002.672-5.48 3.427 3.427 0 00-1.808-1.194l-1.036-.271-.38-1.001a6.714 6.714 0 00-2.409-3.098 6.62 6.62 0 00-3.828-1.209 6.62 6.62 0 00-3.828 1.209 6.718 6.718 0 00-2.41 3.098l-.377.998-1.033.273a3.406 3.406 0 00-2.519 3.284c0 .906.353 1.759.993 2.399a3.364 3.364 0 002.395.992h1.097a.22.22 0 01.218.219v1.64a.22.22 0 01-.218.22H7.376a5.47 5.47 0 01-1.403-10.754z"
+            fill="#fff" />
+        </svg>
+        Download Resume
+      </button>
+
+      <button class="menu__list reject">
+        <svg width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.938 0a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16z" fill="#fff" />
+          <path
+            d="M13.648 7.29a1 1 0 00-1.42 0l-1.29 1.3-1.29-1.3a1.004 1.004 0 00-1.42 1.42l1.3 1.29-1.3 1.29a1 1 0 00.325 1.639 1 1 0 001.095-.219l1.29-1.3 1.29 1.3a1.002 1.002 0 001.638-.325 1 1 0 00-.218-1.095l-1.3-1.29 1.3-1.29a1 1 0 000-1.42z"
+            fill="#fff" />
+        </svg>
+        Reject Candidate
+      </button>
+
+      <button class="menu__list plan">
+        <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M5.833 9.167H7.5v1.666H5.833V9.167zm0 3.333H7.5v1.667H5.833V12.5zm3.334-3.333h1.666v1.666H9.167V9.167zm0 3.333h1.666v1.667H9.167V12.5zM12.5 9.167h1.667v1.666H12.5V9.167zm0 3.333h1.667v1.667H12.5V12.5z"
+            fill="#fff" />
+          <path
+            d="M4.167 18.333h11.666c.92 0 1.667-.747 1.667-1.666V5c0-.92-.747-1.667-1.667-1.667h-1.666V1.667H12.5v1.666h-5V1.667H5.833v1.666H4.167C3.247 3.333 2.5 4.081 2.5 5v11.667c0 .919.748 1.666 1.667 1.666zM15.833 6.667l.001 10H4.167v-10h11.666z"
+            fill="#fff" />
+        </svg>
+        Plan Interview
+      </button>
+
+      <button class="menu__list hire">
+        <svg width="23" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M20.695 6.962c.474.62.474 1.457 0 2.076C19.2 10.987 15.62 15 11.437 15c-4.181 0-7.763-4.013-9.256-5.962a1.692 1.692 0 010-2.076C3.674 5.013 7.256 1 11.437 1c4.183 0 7.764 4.013 9.258 5.962v0z"
+            stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M11.438 11a3 3 0 100-6 3 3 0 000 6z" stroke="#fff" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        Hire Candidate
+      </button>
+    </div>
+
+    <div class="candidate">
+      <div class="candidate__profile">
+        <svg width="26" height="26" fill="none" class="edit-profile" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M17.096 3.117l-9.138 9.138c-.2.2-.312.47-.312.752v4.258c0 .587.477 1.064 1.064 1.064h4.258c.282 0 .553-.112.752-.312l9.138-9.138a3.193 3.193 0 000-4.515l-1.246-1.247a3.193 3.193 0 00-4.516 0zm4.257 2.752l.089.1a1.065 1.065 0 01-.089 1.405L12.525 16.2h-2.75v-2.752L18.6 4.622a1.064 1.064 0 011.505 0l1.247 1.247zm-9.417-1.376c0-.588-.476-1.065-1.064-1.065h-4.29l-.231.005A5.322 5.322 0 001.26 8.75v10.643l.004.231a5.322 5.322 0 005.317 5.091h10.643l.23-.005a5.322 5.322 0 005.092-5.317V14.16l-.007-.125a1.065 1.065 0 00-2.122.125v5.234l-.005.188a3.193 3.193 0 01-3.188 3.005H6.582l-.188-.005a3.193 3.193 0 01-3.005-3.188V8.75l.005-.188a3.193 3.193 0 013.188-3.005h4.29l.124-.007c.53-.062.94-.511.94-1.057z"
+            fill="#0A1629" />
+        </svg>
+
+        <img src="./assets/avatar-2.png" alt="Avatar 2">
+        <h1 class="candidate__name">Evan Yates</h1>
+        <span class="candidate__role">UI/UX Designer</span>
+
+        <span class="candidate__address">
+          <svg width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M9.73 1.898c-3.37 0-6.089 2.812-6.089 6.269 0 1.804 1.368 4.34 4.08 7.727l.236.292a2.284 2.284 0 003.544.005c2.87-3.523 4.316-6.156 4.316-8.024 0-3.457-2.72-6.27-6.088-6.27zm0 1.522c2.515 0 4.565 2.12 4.565 4.747 0 1.404-1.316 3.8-3.974 7.062a.761.761 0 01-1.18 0l-.232-.288c-2.505-3.128-3.746-5.427-3.746-6.774 0-2.628 2.05-4.747 4.566-4.747zm-.001 1.522a3.044 3.044 0 100 6.088 3.044 3.044 0 000-6.088zm0 1.522a1.522 1.522 0 110 3.044 1.522 1.522 0 010-3.044z"
+              fill="#7D8592" />
+          </svg>
+          NYC, New York, USA
+        </span>
+
+        <hr class="line">
+
+        <div class="candidate__data">
+          <div class="candidate-star">
+            <svg width="24" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.855 7.82l.25.504.556.08 6.713.976-4.858 4.737-.402.392.095.554 1.147 6.686-6.004-3.157-.498-.261-.497.261-6.004 3.157L6.5 15.063l.095-.554-.402-.392L1.335 9.38l6.713-.975.556-.081.25-.505 3-6.084 3.002 6.084zM1.077 9.128s0 0 0 0h0zM11.694 1.41s0 0 0 0h0z"
+                stroke="#fff" stroke-width="2.139" />
+            </svg>
+
+            <span>5</span>
+            <span>(4)</span>
+          </div>
+
+          <div class="candidate-clock">
+            <svg width="22" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#prefix__clip0)" fill="#000">
+                <path
+                  d="M10.743 22.401a9.73 9.73 0 01-5.447-1.67 9.884 9.884 0 01-3.61-4.445 10.003 10.003 0 01-.558-5.723A9.939 9.939 0 013.811 5.49a9.772 9.772 0 015.02-2.71 9.708 9.708 0 015.663.563 9.826 9.826 0 014.4 3.649 9.98 9.98 0 011.652 5.503 9.96 9.96 0 01-2.872 7.005 9.751 9.751 0 01-6.931 2.901zm0-18.01a7.961 7.961 0 00-4.456 1.365 8.087 8.087 0 00-2.954 3.637 8.184 8.184 0 00-.457 4.683 8.132 8.132 0 002.195 4.15 7.996 7.996 0 004.107 2.219 7.944 7.944 0 004.634-.462 8.04 8.04 0 003.6-2.985 8.165 8.165 0 001.351-4.503c0-2.15-.845-4.211-2.349-5.731a7.979 7.979 0 00-5.671-2.374zM.047 4.023L3.24.79 4.5 2.063 1.31 5.295.047 4.023zM16.981 2.056L18.243.783l3.192 3.232-1.262 1.273-3.192-3.232z" />
+                <path d="M15.197 11.595h-3.565V7.992H9.85v3.603H6.285v1.8H9.85v3.603h1.782v-3.602h3.565v-1.801z" />
+              </g>
+              <defs>
+                <clipPath id="prefix__clip0">
+                  <path fill="#fff" transform="translate(.047 .367)" d="M0 0h21.388v22.814H0z" />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <span>80%</span>
+            <span>(24)</span>
+          </div>
+
+          <div class="candidate-salary">
+            <svg width="23" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#prefix__clip0)">
+                <path
+                  d="M11.894 25.402c4.847 0 9.752-1.675 9.752-4.876V5.898c0-3.202-4.905-4.877-9.752-4.877S2.14 2.696 2.14 5.898v14.628c0 3.201 4.906 4.876 9.753 4.876zm0-2.438c-4.537 0-7.314-1.578-7.314-2.438V18.98c1.878 1.022 4.604 1.546 7.314 1.546s5.436-.524 7.314-1.546v1.546c0 .86-2.777 2.438-7.314 2.438zm0-19.504c4.537 0 7.314 1.578 7.314 2.438 0 .859-2.777 2.438-7.314 2.438S4.58 6.757 4.58 5.898c0-.86 2.777-2.438 7.314-2.438zM4.58 9.228c1.878 1.022 4.604 1.546 7.314 1.546s5.436-.524 7.314-1.546v1.546c0 .86-2.777 2.438-7.314 2.438S4.58 11.633 4.58 10.774V9.228zm0 4.876c1.878 1.022 4.604 1.546 7.314 1.546s5.436-.524 7.314-1.546v1.546c0 .86-2.777 2.438-7.314 2.438S4.58 16.51 4.58 15.65v-1.546z"
+                  fill="#fff" />
+              </g>
+              <defs>
+                <clipPath id="prefix__clip0">
+                  <path fill="#fff" transform="translate(.922 .228)" d="M0 0h21.943v25.6H0z" />
+                </clipPath>
+              </defs>
+            </svg>
+
+            <span>$4/ hour</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="candidate__summary">
+        <h1 class="candidate__summary-title">Summary</h1>
+
+        <p>
+          Amet, dignissim quam magna molestie et vitae eu nunc molestie. Ut massa est vel ac tempus id. Id consequat
+          eros duis
+          imperdiet. Pellentesque sed elit interdum urna commodo ultricies nisi convallis. Nisl, et, fermentum, nullam
+          turpis
+          risus sit auctor elit proin. Egestas pellentesque lectus ac non orci cras nulla tincidunt. Consequat, urna
+          quisque dolor
+          in diam, massa diam. Lectus id suscipit aenean arcu. Dolor condimentum in adipiscing vulputate pharetra mus
+          scelerisque.
+          Cras at dis eu bibendum. Integer vel pellentesque sem proin. Molestie habitasse lorem quis libero. Nisi
+          malesuada nam
+          lorem vel posuere. Dignissim mi, a mattis sit risus posuere morbi. Purus risus sit in rhoncus.
+          Orci, gravida dictum elit aliquet. Condimentum convallis ut mattis consectetur. Ultrices sed tempor sagittis,
+          ornare.
+          Nunc magna elementum nisl lectus volutpat sit phasellus viverra. Adipiscing ut lacus sodales enim, non
+          phasellus
+          tincidunt. Nisi pellentesque in nunc gravida aliquet amet, nec. Congue interdum mi nulla elit, convallis. Dui,
+          sollicitudin sit fusce enim ultrices.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue elementum non molestie et vitae rutrum nunc.
+          Orci, nam
+          dolor urna vitae duis in non egestas. Amet, aliquet sed egestas lobortis nulla nisi, duis purus malesuada.
+          Duis enim
+          morbi amet, vulputate id gravida aliquet. Amet, dignissim quam magna molestie et vitae eu nunc molestie. Amet,
+          dignissim
+          quam magna molestie et vitae eu nunc molestie. Ut massa est vel ac tempus id. Id consequat eros duis
+          imperdiet.
+          Pellentesque sed elit interdum urna commodo ultricies nisi convallis.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue elementum non molestie et vitae rutrum nunc.
+          Orci, nam
+          dolor urna vitae duis in non egestas. Amet, aliquet sed egestas lobortis nulla nisi, duis purus malesuada.
+          Duis enim
+          morbi amet, vulputate id gravida aliquet. Amet, dignissim quam magna molestie et vitae eu nunc molestie. Amet,
+          dignissim.
+        </p>
+      </div>
+    </div>
+
+    <div class="work-history">
+      <h1 class="work-history__title">Work history</h1>
+
+      <div class="work-history__lists">
+        <div class="work-history__list">
+          <h1 class="work-history__year">2019-2020</h1>
+
+          <p class="work-history__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit duis nec nunc neque, nulla. Elementum id amet,
+            est massa
+            porttitor. Pharetra et, aliquam tellus est molestie orci, gravida adipiscing. Quisque quam sed sed facilisi
+            mi aliquet
+            in. Elit vitae elementum sit proin habitant vel. Malesuada massa purus rhoncus faucibus odio viverra.
+            Ullamcorper in
+            ultrices proin dolor donec
+          </p>
+        </div>
+
+        <div class="work-history__list">
+          <h1 class="work-history__year">2019-2020</h1>
+
+          <p class="work-history__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit duis nec nunc neque, nulla. Elementum id amet,
+            est massa
+            porttitor. Pharetra et, aliquam tellus est molestie orci, gravida adipiscing. Quisque quam sed sed facilisi
+            mi aliquet
+            in. Elit vitae elementum sit proin habitant vel. Malesuada massa purus rhoncus faucibus odio viverra.
+            Ullamcorper in
+            ultrices proin dolor donec
+          </p>
+        </div>
+
+        <div class="work-history__list">
+          <h1 class="work-history__year">2019-2020</h1>
+
+          <p class="work-history__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit duis nec nunc neque, nulla. Elementum id amet,
+            est massa
+            porttitor. Pharetra et, aliquam tellus est molestie orci, gravida adipiscing. Quisque quam sed sed facilisi
+            mi aliquet
+            in. Elit vitae elementum sit proin habitant vel. Malesuada massa purus rhoncus faucibus odio viverra.
+            Ullamcorper in
+            ultrices proin dolor donec
+          </p>
+        </div>
+
+        <div class="work-history__list">
+          <h1 class="work-history__year">2019-2020</h1>
+
+          <p class="work-history__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit duis nec nunc neque, nulla. Elementum id amet,
+            est massa
+            porttitor. Pharetra et, aliquam tellus est molestie orci, gravida adipiscing. Quisque quam sed sed facilisi
+            mi aliquet
+            in. Elit vitae elementum sit proin habitant vel. Malesuada massa purus rhoncus faucibus odio viverra.
+            Ullamcorper in
+            ultrices proin dolor donec
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

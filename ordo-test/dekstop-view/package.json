@@ -1,0 +1,15 @@
+{
+  "name": "dekstop-view",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/main.scss web/css/main.css --style compressed --no-source-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.42.1"
+  }
+}

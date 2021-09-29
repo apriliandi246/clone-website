@@ -1,0 +1,36 @@
+.sidebar {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 311px;
+  overflow: auto;
+  margin-top: 95px;
+  padding-top: 20px;
+  padding-left: 35px;
+  background-color: #fff;
+}
+
+.sidebar__menu {
+  color: #d6d8e7;
+  font-size: 15px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.sidebar__list {
+  color: #97a0c3;
+  font-size: 22px;
+  margin-bottom: 52px;
+  text-decoration: none;
+}
+
+.sidebar__list svg {
+  margin-right: 22px;
+}
+
+.navbar__menu-lock {
+  top: 0;
+  right: 0;
+  margin-top: -10px;
+  position: absolute;
+}

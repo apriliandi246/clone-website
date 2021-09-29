@@ -1,0 +1,37 @@
+.menu__lists {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  justify-content: flex-end;
+}
+
+.menu__list {
+  gap: 14px;
+  color: #fff;
+  border: none;
+  display: flex;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 12px 18px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.download {
+  background-color: #ffbc10;
+}
+
+.reject {
+  background-color: #fc5a5a;
+}
+
+.plan {
+  background-color: #00ba88;
+}
+
+.hire {
+  background-color: #440099;
+}
