@@ -1,15 +1,11 @@
 .candidate {
   gap: 20px;
-  display: flex;
-  align-items: center;
   margin-bottom: 30px;
-  justify-content: space-between;
 }
 
 .candidate__profile {
   width: 426px;
   padding: 16px;
-  position: relative;
   border-radius: 26px;
   background-color: #fff;
   box-shadow: 0px 6.38599px 61.7312px rgba(196, 203, 214, 0.103611);
@@ -19,7 +15,6 @@
   top: 0;
   right: 0;
   margin-top: 28px;
-  position: absolute;
   margin-right: 22px;
   border-radius: 12px;
 }
@@ -27,7 +22,6 @@
 .candidate__name {
   color: #0a1629;
   font-size: 25px;
-  font-weight: 700;
   margin-top: -24px;
   margin-bottom: 8px;
 }
@@ -41,10 +35,8 @@
 .candidate__address {
   gap: 6px;
   padding: 10px;
-  display: flex;
   color: #7d8592;
   border-radius: 8px;
-  align-items: center;
   background-color: #edf2fd;
 }
 
@@ -56,8 +48,6 @@
 
 .candidate__data {
   gap: 12px;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .candidate-star {
@@ -65,12 +55,9 @@
   color: #fff;
   width: 117px;
   padding: 12px;
-  display: flex;
   font-size: 20px;
   border-radius: 34px;
-  align-items: center;
   background-color: #26c0e2;
-  justify-content: space-between;
 }
 
 .candidate-star span {
@@ -80,9 +67,7 @@
 .candidate-clock {
   width: 154px;
   padding: 12px;
-  display: flex;
   font-size: 20px;
-  align-items: center;
   border-radius: 34px;
   background-color: #ffd66b;
 }
@@ -100,10 +85,8 @@
   color: #fff;
   width: 282px;
   padding: 14px;
-  display: flex;
   font-size: 24px;
   border-radius: 43px;
-  align-items: center;
   background-color: #ff8f6b;
 }
 
