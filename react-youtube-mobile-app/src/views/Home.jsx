@@ -4,13 +4,8 @@ import GenreList from "../components/GenreList";
 import BottomMenu from "../components/BottomMenu";
 import styles from "../css/views/Pages.module.css";
 import DetailVideo from "../components/DetailVideo";
+import LargeVideoPreview from "../components/LargeVideoPreview";
 import YTShortPreviewList from "../components/YTShortPreviewList";
-
-let LargeVideoPreview;
-
-import("../components/LargeVideoPreview").then(
-  (component) => (LargeVideoPreview = component.default)
-);
 
 export default function Home() {
   const videos = [...new Array(6)];
