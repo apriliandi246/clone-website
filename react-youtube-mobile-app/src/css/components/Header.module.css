@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  padding: 1.2rem;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0.4rem 1.3rem rgba(0, 0, 0, 0.04);
+}
+
+.header__menus {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu-item {
+  margin-right: 1.2rem;
+}
+
+.header__menus img {
+  border-radius: 100%;
+}
+
+.header__nav {
+  gap: 1.4rem;
+  display: flex;
+  font-weight: 500;
+  font-size: 1.6rem;
+  align-items: center;
+}
+
+.header-link {
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+
+.header-link svg {
+  pointer-events: none;
+  margin-right: 0rem;
+}
+
+.header__user-menu {
+  border: 0;
+  background-color: transparent;
+}
+
+.header__user-menu img {
+  width: 2.4rem;
+  height: 2.4rem;
+  pointer-events: none;
+}

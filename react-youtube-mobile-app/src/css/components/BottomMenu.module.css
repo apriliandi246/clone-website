@@ -1,0 +1,38 @@
+.bottom-menu {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  position: fixed;
+  padding: 1rem 2rem;
+  align-items: center;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+.bottom-menu__item {
+  color: #000;
+  display: flex;
+  font-size: 1.2rem;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom-menu__item svg {
+  margin-bottom: 0.2rem;
+}
+
+.bottom-menu-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.bottom-menu__add {
+  border: 0;
+  background-color: transparent;
+}
+
+.bottom-menu__add svg {
+  pointer-events: none;
+}

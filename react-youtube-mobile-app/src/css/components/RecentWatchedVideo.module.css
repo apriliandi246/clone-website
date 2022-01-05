@@ -1,0 +1,52 @@
+.video-wrapper {
+  width: 15.6rem;
+  margin-right: 0.8rem;
+}
+
+.video-thumbnail {
+  width: 14.8rem;
+  height: 8.9rem;
+  position: relative;
+  margin-bottom: 1.2rem;
+  background-color: #92c952;
+}
+
+.video-time {
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  font-size: 1rem;
+  margin-right: 1rem;
+  position: absolute;
+  margin-bottom: 1rem;
+  border-radius: 0.2rem;
+  padding: 0.3rem 0.5rem;
+  background: rgba(0, 0, 0, 0.64);
+}
+
+.video-detail {
+  display: flex;
+  margin: 0 1.2rem 0.4rem 1.2rem;
+  justify-content: space-between;
+}
+
+.video-detail__title {
+  color: #0a0a0a;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.video-detail__menu {
+  border: 0;
+  margin-left: 1rem;
+  align-self: flex-start;
+  background-color: transparent;
+}
+
+.video-detail__channel {
+  color: #6c6c6c;
+  font-size: 1.2rem;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+}

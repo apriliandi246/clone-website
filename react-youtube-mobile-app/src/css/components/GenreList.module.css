@@ -1,0 +1,60 @@
+.genre-list {
+  display: flex;
+  margin: 1.2rem;
+  overflow-x: auto;
+  align-items: center;
+}
+
+.genre-list__explore {
+  width: 9rem;
+  display: flex;
+  padding: 0.8rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  align-items: center;
+  border-radius: 0.4rem;
+  background-color: #ececec;
+}
+
+.genre-list__explore svg {
+  margin-right: 1rem;
+}
+
+.genre-list__line {
+  width: 0.13rem;
+  height: 2.4rem;
+  color: transparent;
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+  background-color: #cecece;
+}
+
+.genre-list__genre-list {
+  display: inline-flex;
+}
+
+.genre-list__item {
+  color: #000;
+  display: flex;
+  overflow: hidden;
+  font-size: 1.2rem;
+  align-self: center;
+  white-space: nowrap;
+  align-items: center;
+  margin-right: 0.5rem;
+  border-radius: 2.4rem;
+  padding: 0.8rem 1.2rem;
+  justify-content: center;
+  background-color: #ececec;
+  border: 0.1rem solid #cecece;
+}
+
+.genre-list__item:last-child {
+  margin-right: 0;
+}
+
+.genre-list__item--active {
+  color: #fff;
+  background-color: #3b3b3b;
+  border: 0.1rem solid #6c6c6c;
+}

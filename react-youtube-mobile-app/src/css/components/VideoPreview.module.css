@@ -1,0 +1,47 @@
+.video-preview-wrapper {
+  display: flex;
+  position: relative;
+  margin: 0 1.2rem 1rem 1.2rem;
+}
+
+.video-thumbnail {
+  width: 14.8rem;
+  height: 8.8rem;
+  margin-right: 1rem;
+  background-color: #92c952;
+}
+
+.video-title {
+  color: #0a0a0a;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-right: 2rem;
+  line-height: 1.7rem;
+}
+
+.video-channel {
+  color: #6c6c6c;
+  font-size: 1.2rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.video-views {
+  color: #6c6c6c;
+  font-size: 1.2rem;
+}
+
+.video-menu {
+  right: 0;
+  border: 0;
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.video-menu svg {
+  pointer-events: none;
+}
